@@ -1,0 +1,96 @@
+html, body, header, nav, h1, a,
+ul, li, strong, main, button, i,
+section, img, div, h2, p, form,
+fieldset, label, input, textarea,
+span, article, footer, time, small {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font: inherit;
+  color: inherit;
+  text-align: inherit;
+  text-decoration: inherit;
+  vertical-align: inherit;
+  box-sizing: inherit;
+  background: transparent;
+}
+
+#outerDiv {
+  width: 900px;
+  margin: 0 auto;
+}
+
+#canvas {
+  background-image: url('../assets/underwater-lightrays.jpeg');
+  background-size: 100% 100%;
+  display: block;
+  margin: 0px auto;
+  border: 5px solid black;
+}
+
+audio {
+  display: block;
+  width: 300px;
+  margin: 0 auto;
+}
+
+.welcome {
+  display: block;
+  position: relative;
+  width: 800px;
+  margin: 30px auto;
+  background-color: rgba(102, 204, 255, 0.1);
+  border-radius: 5px;
+  top: -575px;
+
+  z-index: 1;
+  /*margin:  aut*/
+}
+
+h1 {
+  width: 600px;
+  text-align: center;
+  margin: 0 auto;
+  padding-bottom: 30px;
+  font-family: 'Amatic SC';
+  font-weight: bold;
+  color: white;
+  font-size: 100px;
+}
+
+p {
+  font-weight: bold;
+  color: white;
+  font-family: 'Amatic SC';
+  font-size: 25px;
+  margin: 0 auto;
+  width: 750px;
+  text-align: center;
+  padding: 15px;
+}
+
+.directions {
+  font-size: 35px;
+}
+
+#controls {
+  position: relative;
+}
+
+.redText {
+  color: red;
+}
+
+.hidePls {
+  display: none;
+}
+
+body {
+  /*position: fixed;*/
+  background-color: #001a33;
+  /*background-image: url(http://crowdenergy.org/wp-content/uploads/011643676-underwater-lightrays.jpeg);*/
+  /*background-size: 100% 100%;*/
+}
+
+/*background:url(assets/underwater.png); background-size: 100% 100%; display: block; margin: 0 auto;*/

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Brave Little Squidy</title>
+    <link href='https://fonts.googleapis.com/css?family=Amatic+SC:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="./stylesheets/squidy.css">
+  </head>
+  <body>
+    <audio autoplay="true" loop='true' controls>
+      <source src="./assets/music.mp3"  type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+      <canvas id="canvas" width="1000" height="600"></canvas>
+      <div class='welcome'>
+        <h1>Brave Little Squidy</h1>
+        <p class='directions'>Try to survive!</p>
+        <p id='rules'>The little squidy can be eaten by bigger squids, but he can eat the smaller ones!</p>
+        <p id='goal'>Eating makes him grow!</p>
+        <p id='controls'>You can move him with '<span class='redText'>w</span>', '<span class='redText'>a</span>', '<span class='redText'>s</span>', and '<span class='redText'>d</span>'.</p>
+        <p class='directions'>Press Space to play!</p>
+      </div>
+
+      <script type="application/javascript" src="javascript/util.js"></script>
+      <script type="application/javascript" src="javascript/moving_object.js"></script>
+      <script type="application/javascript" src="javascript/enemy.js"></script>
+      <script type="application/javascript" src="javascript/hero.js"></script>
+      <script type="application/javascript" src="javascript/game.js"></script>
+      <script type="application/javascript" src="javascript/game_view.js"></script>
+      <script type="application/javascript">
+        (function () {
+          var canvasEl = document.getElementById("canvas");
+          var ctx = canvasEl.getContext("2d");
+          var game = new Squidy.Game();
+          new Squidy.GameView(game, ctx).start();
+        })();
+      </script>
+  </body>
+</html>
