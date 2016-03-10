@@ -26,12 +26,12 @@
   };
 
   GameView.prototype.bindKeyHandlers = function () {
-    var hero = this.hero;
+    // var hero = this.hero;
     var that = this;
     var validKeys = [65, 68, 83, 87];
 
     document.addEventListener('keydown', function(e){
-      if (e.keyCode === 32 && !that.game.playing) {
+      if ((e.keyCode === 32 && !that.game.playing) || that.game.hero.radius >= 420 ) {
         // hit spacebar when game is over
         that.newGame();
       }
@@ -89,6 +89,7 @@
         this.ctx.fillText("Press Space to play again!", 500, 400);
       }
       else {
+        // this.game.playing = false;
         this.ctx.fillText("You won! Little Squidy did it!", 500, 300);
         this.ctx.fillText("Press Space to play again!", 500, 400);
       }
