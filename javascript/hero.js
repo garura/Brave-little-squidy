@@ -13,7 +13,7 @@
     Squidy.MovingObject.call(this, options)
   };
 
-  Hero.RADIUS = 20;
+  Hero.RADIUS = 150;
 
 
   Squidy.Util.inherits(Hero, Squidy.MovingObject);

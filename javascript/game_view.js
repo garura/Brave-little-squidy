@@ -31,7 +31,7 @@
     var validKeys = [65, 68, 83, 87];
 
     document.addEventListener('keydown', function(e){
-      if ((e.keyCode === 32 && !that.game.playing) || that.game.hero.radius >= 420 ) {
+      if (e.keyCode === 32 && (!that.game.playing || that.game.hero.radius >= 420)) {
         // hit spacebar when game is over
         that.newGame();
       }
