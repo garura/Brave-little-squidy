@@ -35,7 +35,7 @@
     ctx.clearRect(0, 0, ctx.canvas.width, ctx.canvas.height);
 
     this.hero.draw(ctx);
-    
+
     this.enemies.forEach(function (object) {
       object.draw(ctx);
     });
